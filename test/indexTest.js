@@ -60,7 +60,7 @@ describe('index.js', () => {
       expect(tailsNeverFails()).to.eq('You got 2 tails in a row!');
     });
 
-    it('loops indefinitely until a flip results in "Heads"', () => {
+    it('loops indefinitely until a flip results in "Heads"', () =>
       spy
         .onCall(0).returns(0.7)
         .onCall(1).returns(0.6)
